@@ -1,0 +1,32 @@
+.btn {
+  font-size: 18px;
+  height: 40px;
+  padding: 0px 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  margin: 15px;
+  border: none;
+  transition: $primaryTransition;
+
+  @media screen and (min-width: 1280px) {
+    display: inline-flex;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.btn-primary {
+  background:  linear-gradient(86deg, #C4D600 7.59%, #e5eba4 104.8%);
+  color: $whiteColor;
+
+  &:hover {
+    background: linear-gradient(86deg, #e5eba4 7.59%, #C4D600 104.8%);
+    color: $whiteColor;
+  }
+}

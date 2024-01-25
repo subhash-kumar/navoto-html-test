@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META TAGS -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- TITLE -->
+    <title>Navoto html Test Template</title>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+    
+    <link rel="stylesheet" href="./assets/scss/style.min.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
+  </head>
+  <body>
+    <section class="header-content">
+      <div class="container">
+        <header>
+          <nav class="navbar navbar-expand-lg p-0">
+            <button
+              class="navbar-toggler border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- <a href="#contact" class="btn btn-primary contact-btn order-lg-3"
+              >Contact</a
+            > -->
+            <div class="collapse navbar-collapse order-lg-2" id="navbarText">
+              <ul class="navbar-nav mx-auto" style="margin-left: unset !important;">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >מחשבונים</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">מפת עמדות טעינה</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">בלוג</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">התקנת עמדות טעינה</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">עמדות טעינה</a>
+                </li>
+              </ul>
+              
+            </div>
+            <a class="navbar-brand m-0" href="/">
+              <img src="/assets/images/logo.png" alt="logo image" />
+            </a>
+          </nav>
+        </header>
+      </div>
+    </section>
+       
+    <section class="banner-main pb-4 pb-lg-5">
+    <div class="banner_wrap">
+      <div class="container">
+        <div class="banner_row">
+    
+          <div class="banner_col">
+            <div class="banner_heading">
+              <h2> אנו נמצא לכם את ספקית החשמל המשתלמת ביותר!</h2>
+            </div>
+          </div><!--col-->
+    
+          <div class="banner_col">
+            <!--banner form-->
+            <div class="bannerForm">
+              <h2>מלאו את הפרטים הבאים: </h2>
+                
+              <form>
+                <div class="formGroups">
+    
+                  <label>
+    
+                    <span class="tooltip"><a href="#popupKWH"><img loading="lazy"
+                          src="https://chashmalit.co.il/wp-content/uploads/2023/11/question_mark_icons.png" alt="icon"
+                          width="19" height="19"></a>
+                    </span>
+    
+    
+                    <span class="textMbl">קוט"ש: </span>
+    
+                    <span class="errorMsg_notification" id="kwhinputval" style="display: none; color: #FF0000;">
+                      אנא הזינו את כמות הקוט"ש </span>
+                  </label>
+                  <input type="number" name="kwhinput" placeholder="" id="kwhinput" value="" required="">
+    
+    
+    
+                </div><!--list-->
+    
+    
+                <div class="formGroups">
+    
+                  <label>
+                    <span class="tooltip"><a href="#newpoupsec"><img loading="lazy"
+                          src="https://chashmalit.co.il/wp-content/uploads/2023/11/question_mark_icons.png" alt="icon"
+                          width="19" height="19"></a>
+                    </span>
+    
+                    <span class="textMbl">מחיר לקוט״ש: (לפני מע"מ) </span>
+                    <span class="errorMsg_notification" id="kwhinputvalTwo" style="display: none; color: #FF0000;">
+                      יש להזין עלות קוט"ש (קוט"ש מעודכן: 0.5134) </span>
+                  </label>
+                  <input type="number" name="home_price_select" placeholder="" id="homepriceval" value="0.5134">
+    
+                </div><!--list-->
+                <span id="nevativevalue"></span>
+                <div class="formGroups">
+                  <div class="bannerForm_des">
+    
+                    <h3>לתשומת ליבך, </h3>
+                    <p>החישוב נעשה עבור מסלולי החשמל עם ההנחה הקבועה לאורך כל היום, החישוב נעשה ללא מע״מ
+                      ותעריפים&nbsp;משתנים. <a style="color:#183028" href="#VATandVariable"></a> </p>
+                  </div>
+                </div><!--list-->
+    
+    
+    
+    
+                <div class="formGroups">
+    
+                  <button type="button" class="btn-primary" id="submitBtn">להשוואה בין ספקיות החשמל</button>
+    
+    
+                </div><!--list-->
+    
+    
+    
+              </form>
+    
+    
+    
+            </div>
+            <!--end banner form-->
+    
+          </div><!--col-->
+    
+    
+        </div><!--row-->
+    
+      </div>
+    </div>
+    </section>
+    
+
+    
+    <section id="workshops" class="main-content">
+      <div class="container">
+        <div class="wrapper">
+          
+
+          <div class="life-practise">
+            <h3 class="primary-heading">המחיר לחשמל כיום (לפי הנתונים מעלה): ₪1700</h3>
+            
+
+            <ul>
+              <li>
+               
+                <div class="wrap">
+                  <h4>חשמל חינם בלילה</h4>
+                  <img src="/assets/images/test3.png" alt="Concentration" />
+                  <p class="text-center">
+                    בחברה זו תשלם רק
+                  </p>
+                  <h2 class="text-center">₪1120</h2>
+                  <p class="text-center">₪0.12 לקוט״ש</p>
+                  <a href="#" class="btn btn-primary">חשמל חינם בלילה</a>
+                </div>
+               
+              </li>
+
+              <li>
+              
+                <div class="wrap">
+                  <h4>5% הנחה</h4>
+                  <img src="./assets/images/test2.png" alt="Concentration" />
+                  <p class="text-center">
+                    בחברה זו תשלם רק
+                  </p>
+                  <h2 class="text-center">₪1120</h2>
+                  <p class="text-center">₪0.12 לקוט״ש</p>
+                  <a href="#" class="btn btn-primary">חשמל חינם בלילה</a>
+                </div>
+              
+              </li>
+
+              <li>
+              
+                <div class="wrap">
+                  <h4>10% הנחה</h4>
+                  <img src="./assets/images/test1.png" alt="Concentration" />
+                  <p class="text-center">
+                    בחברה זו תשלם רק
+                  </p>
+                  <h2 class="text-center">₪1120</h2>
+                  <p class="text-center">₪0.12 לקוט״ש</p>
+                  <a href="#" class="btn btn-primary">חשמל חינם בלילה</a>
+                </div>
+              
+              </li>
+
+              <li>
+              
+                <div class="wrap">
+                  <div>
+                  <h4>חשמל חינם בבוקר</h4>
+                  </div>
+                  <img src="./assets/images/test.png" alt="Concentration" />
+                  <p class="text-center">בחברה זו תשלם רק
+                  </p>
+                  <h2 class="text-center">₪1120</h2>
+                  <p class="text-center">₪0.12 לקוט״ש</p>
+                  <a href="#" class="btn btn-primary">חשמל חינם בלילה</a>
+                </div>
+              
+              </li>
+            </ul>
+            <!-- <a href="#" class="btn btn-primary">Know more</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="wrapper">
+              <h4 class="primary-heading">לא מצאתם מה שחיפשתם?<br />
+              השאירו פרטים ונחזור עם הצעה מותאמת בשבילכם!</h4>
+              <div class="row align-items-center">
+                <div class="col-md-12">
+                  <div class="banner_col">
+                    <!--banner form-->
+                    <div class="bannerForm">
+                     
+                    
+                  
+                      <form>
+                        <div class="formGroups col-md-12">
+                  
+                          
+                          <input type="number" name="kwhinput" placeholder="שם פרטי" id="kwhinput" required="">
+                          <input type="number" name="kwhinput" placeholder="שם פרטי" id="kwhinput" required="">
+                          <input type="number" name="kwhinput" placeholder="שם פרטי" id="kwhinput" required="">
+                  
+                  
+                  
+                        </div><!--list-->
+                  
+                  
+                        <div class="formGroups">
+                  
+                         
+                          <input type="number" name="home_price_select" placeholder="אימייל" id="homepriceval">
+                          <input type="number" name="home_price_select" placeholder="עיר מגורים אימייל" id="homepriceval">
+                  
+                        </div><!--list-->
+                        <span id="nevativevalue"></span>
+                      
+                  
+                  
+                  
+                  
+                        <div class="formGroups">
+                  
+                          <button type="button" class="btn-primary" id="submitBtn">להשוואה בין ספקיות החשמל</button>
+                  
+                  
+                        </div><!--list-->
+                  
+                  
+                  
+                      </form>
+                  
+                  
+                  
+                    </div>
+                    <!--end banner form-->
+                  
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+
+
+            
+          </div>
+        </div>
+      </div>
+     
+       
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6">
+          
+            <!-- Brand -->
+            <img src="./assets/images/logo-footer.png" alt="..." class="footer-brand img-fluid mb-2">
+          
+                    
+          
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+      
+      
+            <!-- Social -->
+            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none" style="color: #FFF;">
+                  אודות החברה
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-12">
+                <a href="#!" class="text-decoration-none" style="color: #FFF;">
+                בלוג
+                </a>
+              </li>
+              
+            </ul>
+      
+          </div>
+          
+          
+          
+          
+          
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+      <div class="copyright">
+        <div class="container">
+          <ul>
+            
+            <li>
+              <a href="" title="Linkedin" target="_blank">
+                <img
+                  src="./assets/images/footer/social/linkedin.svg"
+                  alt="Linkedin"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="" title="Twitter" target="_blank">
+                <img
+                  src="./assets/images/footer/social/twitter.svg"
+                  alt="Twitter"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="" title="Facebook" target="_blank">
+                <img src="./assets/images/footer/social/facebook.svg" alt="Facebook" />
+              </a>
+            </li>
+          </ul>
+          <!-- <p>Copyrights Reserved 2024</p> -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  </body>
+</html>

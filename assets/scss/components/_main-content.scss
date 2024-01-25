@@ -1,0 +1,504 @@
+.main-content {
+  // padding: 3.31rem 0 6.3294rem;
+  padding: 1.25rem 0;
+
+  @media screen and (min-width: 80rem) {
+    padding: 3.75rem 0;
+  }
+
+  p {
+    text-align: center;
+    color: $contentColor;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+
+    @media screen and (min-width: 80rem) {
+      font-size: 1.5rem;
+    }
+  }
+
+  h3 + p {
+    margin-top: 1.25rem;
+
+    @media screen and (min-width: 80rem) {
+      margin-top: 1.5212rem;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media screen and (min-width: 80rem) {
+      // gap: 3.125rem;
+      & > div:not(:first-child) {
+        padding-top: 3.125rem;
+      }
+    }
+  }
+}
+
+.life-practise {
+  ul {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    @media screen and (min-width: 80rem) {
+      margin-top: 2.7088rem;
+      gap: 1.25rem;
+      flex-direction: row;
+    }
+    li {
+      padding: 1.2813rem 0.8538rem 1.2813rem 1.2919rem;
+      border-radius: 0.5rem;
+      // background: $intenseBrownColor;
+      display: flex;
+      gap: 0.7081rem;
+      align-items: center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+      @media screen and (min-width: 80rem) {
+        display: block;
+        text-align: center;
+        // padding: 1.5rem 0.5rem;
+        padding: 0.1rem .00rem;
+        width: calc((100% - 3.75rem) / 4);
+      }
+
+      @media screen and (min-width: 87.5rem) {
+        padding: 1.875rem 1.41rem 2.2131rem;
+      }
+
+      img {
+        display: block;
+        width: 5.625rem;
+        height: 5.625rem;
+        margin: 0 auto;
+
+        @media screen and (min-width: 80rem) {
+          margin: 0 auto 1.7644rem;
+          width: 7.5625rem;
+          height: 7.5625rem;
+        }
+      }
+
+      h4 {
+        color: $whiteColor;
+        font-size: 1.125rem;
+        font-style: normal;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+        line-height: normal;
+        background: $bgColor;
+
+        @media screen and (min-width: 80rem) {
+          font-size: 1.5rem;
+          margin-bottom: 0.8975rem;
+          line-height: 175%;
+        }
+      }
+
+      p {
+        color: $bgColor;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        text-align: left;
+
+        @media screen and (min-width: 80rem) {
+          text-align: center;
+          line-height: 140%;
+        }
+      }
+    }
+  }
+}
+
+.get-personalized {
+  ul {
+    margin-top: 1.5625rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 2.9375rem;
+    @media screen and (min-width: 80rem) {
+      flex-wrap: nowrap;
+      gap: 1.25rem;
+      margin-top: 3.125rem;
+    }
+
+    @media screen and (min-width: 87.5rem) {
+      margin-top: 4.4856rem;
+    }
+    li {
+      width: calc(100% / 2);
+      @media screen and (min-width: 80rem) {
+        width: auto;
+      }
+      span {
+        display: block;
+        color: $intenseBrownColor;
+        text-align: center;
+        margin-bottom: 0.2825rem;
+        font-size: 3.125rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 90%;
+
+        @media screen and (min-width: 80rem) {
+          margin-bottom: 0.625rem;
+          font-size: 3.75rem;
+        }
+
+        @media screen and (min-width: 87.5rem) {
+          font-size: 6.25rem;
+          margin-bottom: 0.9075rem;
+        }
+      }
+
+      p {
+        line-height: 110%;
+        font-weight: 500;
+        font-size: 1rem;
+
+        @media screen and (min-width: 80rem) {
+          font-size: 1.125rem;
+          line-height: 90%;
+        }
+      }
+    }
+  }
+}
+
+.workshops {
+  .workshop {
+    background-color: rgba(219, 126, 0, 0.15);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+
+    .image {
+      border-radius: 0.5rem;
+      overflow: hidden;
+      position: relative;
+
+      .overlap-logo {
+        background: $intenseBrownColor;
+        position: absolute;
+        left: 0;
+        width: 5.625rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        height: 100%;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    
+
+    h3 {
+      color: $intenseBrownColor;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 700;
+      margin: 0.9375rem 0 0;
+      line-height: normal;
+    }
+
+    .btn {
+      @media screen and (min-width: 80rem) {
+      width: 13.75rem;
+      }
+    }
+
+    ul {
+      display: flex;
+      gap: 1.375rem;
+      margin: 1rem 0 1.25rem;
+
+      @media screen and (min-width: 87.5rem) {
+        gap: 1.6875rem;
+      }
+      li {
+        flex-shrink: 0;
+        width: auto;
+        p {
+          color: $intenseBrownColor;
+          font-size: 0.875rem;
+          font-style: normal;
+          font-weight: 400;
+          white-space: nowrap;
+          line-height: normal;
+          margin-bottom: 0.125rem;
+          letter-spacing: 0.0875rem;
+        }
+
+        span {
+          color: $intenseBrownColor;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+  h3 {
+    margin-bottom: 1.25rem;
+    @media screen and (min-width: 80rem) {
+      margin-bottom: 3.125rem;
+    }
+  }
+  ul {
+    margin-top: 1.0762rem;
+    display: flex;
+    overflow-x: auto;
+    gap: 0.625rem;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+    @media screen and (min-width: 48rem) {
+      flex-wrap: wrap;
+      overflow-x: hidden;
+    }
+
+    @media screen and (min-width: 80rem) {
+      margin-top: 1.5288rem;
+      gap: 0.9375rem;
+    }
+    li {
+      width: 100%;
+      flex-shrink: 0;
+      scroll-snap-align: center;
+
+      @media screen and (min-width: 80rem) {
+        width: calc((100% - 2.8125rem) / 4);
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  h4 {
+    color: $orangeGoldColor;
+    margin-bottom: 0.8969rem;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    @media screen and (min-width: 80rem) {
+      font-size: 1.625rem;
+      margin-bottom: 1.1987rem;
+      line-height: 161.538%;
+    }
+  }
+
+  p {
+    text-align: left;
+    font-size: 1.125rem;
+    color: $contentColor;
+    font-weight: 400;
+
+    & + p {
+      margin-top: 0.5rem;
+      @media screen and (min-width: 80rem) {
+        margin-top: 0.2988rem;
+      }
+    }
+
+    strong {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: $intenseBrownColor;
+    }
+
+    @media screen and (min-width: 80rem) {
+      line-height: normal;
+    }
+  }
+}
+
+.no-workshop-available {
+  background-color: rgba(219, 126, 0, 0.15);
+  border-radius: 0.75rem;
+  text-align: center;
+  padding: 2.5919rem 1.8075rem;
+
+  p {
+    margin-top: 1.7644rem;
+    color: $intenseBrownColor;
+    font-size: 1.125rem;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.about-instructor {
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  .btn {
+    margin-top: 1.5rem;
+    min-width: 13.75rem;
+  }
+
+  p {
+    text-align: left;
+    font-size: 1.125rem;
+    line-height: 135%;
+
+    & + img {
+      margin-top: 1.5rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media screen and (min-width: 80rem) {
+        margin-right: 0;
+        margin-left: 0;
+        // display: inline-block;
+      }
+    }
+
+    & + p {
+      margin-top: 1.875rem;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  h3 {
+    @media screen and (min-width: 80rem) {
+      text-align: left;
+    }
+  }
+}
+
+.video-gallery {
+  .row > * {
+    --bs-gutter-x: 1.25rem;
+  }
+
+  .btn {
+    width: 13.75rem;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  @media screen and (max-width: 48rem) {
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .col-md-3 {
+        width: 92vw;
+        scroll-snap-align: center;
+      }
+    }
+  }
+
+  .video-box {
+    a {
+      display: block;
+    }
+    &--image {
+      position: relative;
+      p {
+        bottom: 0.9681rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        left: 0.9019rem;
+        span {
+          color: var(--light-pale, #fffde4);
+          font-size: 1.375rem;
+          font-style: normal;
+          font-weight: 700;
+          padding: 0.25rem 0.655rem;
+          line-height: 140%;
+          background: var(--brown-1, #d47d00);
+
+          @media screen and (min-width: 80rem) {
+            font-size: 1rem;
+          }
+
+          @media screen and (min-width: 87.5rem) {
+            font-size: 1.375rem;
+          }
+        }
+      }
+      img {
+        width: 100%;
+        display: block;
+        &.play-icon {
+          position: absolute;
+          width: auto;
+          z-index: 1;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+        }
+      }
+    }
+
+    &--content {
+      margin-top: 0.9075rem;
+      p {
+        color: #49403e;
+        font-size: 1.125rem;
+        text-align: left;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+
+        @media screen and (min-width: 80rem) {
+          font-size: 1rem;
+        }
+
+        @media screen and (min-width: 87.5rem) {
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+}
